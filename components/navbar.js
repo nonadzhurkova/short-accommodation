@@ -10,6 +10,10 @@ export default function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="bg-white shadow fixed w-full z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -45,6 +49,9 @@ export default function Navbar() {
             <Link href="#gallery" className="text-gray-700 hover:text-indigo-600">
               Gallery
             </Link>
+            <Link href="#location" className="text-gray-700 hover:text-indigo-600">
+              Location
+            </Link>
             <Link href="#contact" className="text-gray-700 hover:text-indigo-600">
               Contact
             </Link>
@@ -79,19 +86,22 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden">
           <div className="px-4 pt-2 pb-4 space-y-1">
-            <Link href="/" className="block text-gray-700 hover:text-indigo-600">
+            <Link href="/" className="block text-gray-700 hover:text-indigo-600" onClick={closeMenu}>
               Home
             </Link>
-            <Link href="#about" className="block text-gray-700 hover:text-indigo-600">
+            <Link href="#about" className="block text-gray-700 hover:text-indigo-600" onClick={closeMenu}>
               About
             </Link>
-            <Link href="#features" className="block text-gray-700 hover:text-indigo-600">
+            <Link href="#features" className="block text-gray-700 hover:text-indigo-600" onClick={closeMenu}>
               Features
             </Link>
-            <Link href="#gallery" className="block text-gray-700 hover:text-indigo-600">
+            <Link href="#gallery" className="block text-gray-700 hover:text-indigo-600" onClick={closeMenu}>
               Gallery
             </Link>
-            <Link href="#contact" className="block text-gray-700 hover:text-indigo-600">
+            <Link href="#location" className="block text-gray-700 hover:text-indigo-600" onClick={closeMenu}>
+              Location
+            </Link>
+            <Link href="#contact" className="block text-gray-700 hover:text-indigo-600" onClick={closeMenu}>
               Contact
             </Link>
           </div>
