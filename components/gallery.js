@@ -1,6 +1,5 @@
 "use client";
 
-
 import { useState } from "react";
 
 const images = [
@@ -48,7 +47,12 @@ const images = [
 ];
 
 export default function Gallery() {
+    const [visibleImages, setVisibleImages] = useState(6);
     const [selectedImage, setSelectedImage] = useState(null);
+
+    const loadMoreImages = () => {
+        setVisibleImages((prev) => Math.min(prev + 6, images.length)); // Load 6 more images
+    };
 
     return (
         <section id="gallery" className="py-16 px-6 bg-gray-100">
@@ -56,7 +60,7 @@ export default function Gallery() {
                 <h2 className="text-3xl font-bold text-center mb-8">Gallery</h2>
                 {/* Image Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                    {images.map((src, index) => (
+                    {images.slice(0, visibleImages).map((src, index) => (
                         <div
                             key={index}
                             className="relative cursor-pointer"
@@ -66,10 +70,23 @@ export default function Gallery() {
                                 src={src}
                                 alt={`Gallery Image ${index + 1}`}
                                 className="w-full h-48 object-cover rounded-lg shadow-md"
+                                loading="lazy"
                             />
                         </div>
                     ))}
                 </div>
+
+                {/* Load More Button */}
+                {visibleImages < images.length && (
+                    <div className="text-center mt-8">
+                        <button
+                            className="px-6 py-3 bg-indigo-600 text-white font-bold rounded-lg shadow hover:bg-indigo-700 transition"
+                            onClick={loadMoreImages}
+                        >
+                            Load More
+                        </button>
+                    </div>
+                )}
 
                 {/* Modal */}
                 {selectedImage && (
