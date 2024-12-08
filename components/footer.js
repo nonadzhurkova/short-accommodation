@@ -9,8 +9,8 @@ export default function Footer() {
                     {/* Left Section: Business Info */}
                     <div className="mb-6 md:mb-0 text-center md:text-left">
                         <h3 className="text-lg font-bold mb-2">Downtown Apartment By The Lindens</h3>
-                        <p className="text-gray-600">Yambol, Bulgaria</p>
-                        <p className="text-gray-600">info@yourapartment.com</p>
+                        <p className="text-gray-600">Yambol, Bulgaria, Targovska street</p>
+                       
                     </div>
                 
                     {/* Center Section: Social and Booking Links */}

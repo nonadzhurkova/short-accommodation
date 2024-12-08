@@ -42,10 +42,7 @@ export default function CookiePolicy() {
                     requirements, or our practices. We encourage you to review this page periodically.
                 </p>
 
-                <p className="text-gray-700 leading-relaxed">
-                    If you have any questions about our Cookie Policy, please contact us at
-                    <strong> info@yourapartment.com</strong>.
-                </p>
+                
             </div>
         </section>
     );

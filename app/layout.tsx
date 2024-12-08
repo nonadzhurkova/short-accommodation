@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "../components/navbar"
-import Footer from "../components/footer"
-import CookieBanner from "../components/cookie"
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
+import CookieBanner from "../components/cookie";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -18,7 +18,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Downtown Apartment By the Lindens",
-  description: "Yambol,Bulgaria, Short stay accomodation",
+  description: "Yambol, Bulgaria, Short stay accommodation",
 };
 
 export default function RootLayout({
@@ -28,9 +28,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KR8XWB26');`,
+          }}
+        ></script>
+        {/* End Google Tag Manager */}
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* Google Tag Manager NoScript Fallback */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-KR8XWB26"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
         <Navbar />
         {children}
         <Footer />
