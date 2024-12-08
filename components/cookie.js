@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { useState, useEffect } from "react";
 
@@ -24,9 +25,9 @@ export default function CookieBanner() {
             <div className="fixed bottom-0 left-0 w-full bg-gray-900 text-white py-4 px-6 z-50">
                 <p className="text-sm">
                     This website uses cookies to enhance your browsing experience. By continuing to use this site, you agree to our use of cookies.{" "}
-                    <a href="/privacy-policy" className="underline">
+                    <Link href="/privacy-policy" className="underline">
                         Learn more
-                    </a>.
+                    </Link>.
                 </p>
                 <div className="mt-2 flex justify-end">
                     <button

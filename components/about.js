@@ -9,7 +9,7 @@ export default function About() {
                 {/* Intro Section */}
                 <div className="bg-white rounded-lg shadow-md p-8 mb-12">
                     <p className="text-gray-700 text-lg leading-relaxed text-center">
-                        Welcome to our modern 2-bedroom apartment, located in the heart of Yambol's vibrant walking zone. Recently renovated in the summer of 2024, this stylish and cozy space is perfect for up to 4 guests. Whether you're visiting with family, friends, or for business, our apartment offers a blend of comfort and convenience that makes your stay unforgettable.
+                        Welcome to our modern 2-bedroom apartment, located in the heart of Yambol&apos;s vibrant walking zone. Recently renovated in the summer of 2024, this stylish and cozy space is perfect for up to 4 guests. Whether you&apos;re visiting with family, friends, or for business, our apartment offers a blend of comfort and convenience that makes your stay unforgettable.
                     </p>
                 </div>
 
@@ -96,7 +96,7 @@ export default function About() {
                             Prime Location
                         </h3>
                         <p className="text-gray-700 leading-relaxed">
-                            Located in Yambol's central walking zone, enjoy a car-free environment, easy access to public transport, and proximity to restaurants, shops, and attractions.
+                            Located in Yambol&apos;s central walking zone, enjoy a car-free environment, easy access to public transport, and proximity to restaurants, shops, and attractions.
                         </p>
                     </div>
                 </div>

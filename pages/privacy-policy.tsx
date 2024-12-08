@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function PrivacyPolicy() {
     return (
         <section className="py-16 px-6 bg-white">
@@ -46,7 +48,7 @@ export default function PrivacyPolicy() {
                 <h2 className="text-xl font-bold text-gray-800 mb-3">5. Cookies</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
                     We use cookies to improve your experience on our website. For more information, please
-                    refer to our <a href="/cookie-policy" className="text-indigo-600 underline">Cookie Policy</a>.
+                    refer to our <Link href="/cookie-policy" className="text-indigo-600 underline">Cookie Policy</Link>.
                 </p>
 
                 <h2 className="text-xl font-bold text-gray-800 mb-3">6. Changes to This Policy</h2>
