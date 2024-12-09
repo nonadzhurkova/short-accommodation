@@ -17,8 +17,37 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Downtown Apartment By the Lindens",
-  description: "Yambol, Bulgaria, Short stay accommodation",
+  title: "Downtown Apartment By the Lindens | Short Stay in Yambol, Bulgaria",
+  description:
+    "Stay at Downtown Apartment By the Lindens in Yambol, Bulgaria. A modern 2-bedroom apartment located in the city center. Perfect for short stays, families, and business travelers. Book now!",
+  keywords: [
+    "Yambol short stay",
+    "Downtown Apartment Yambol",
+    "Linden apartments",
+    "City center accommodation",
+    "Short term rental Yambol",
+    "Yambol Bulgaria apartments",
+  ],
+  openGraph: {
+    title: "Downtown Apartment By the Lindens | Short Stay in Yambol, Bulgaria",
+    description:
+      "Discover our cozy, modern 2-bedroom apartment in the heart of Yambol, Bulgaria. Perfect for short-term stays and close to top attractions. Book your stay today!",
+    url: "https://lindens.vercel.app/",
+    type: "website",
+    images: [
+      {
+        url: "https://lindens.vercel.app/DSC_2415.JPG", // Replace with a real image URL
+        alt: "Downtown Apartment By the Lindens in Yambol, Bulgaria",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Downtown Apartment By the Lindens",
+    description:
+      "Stay at a modern, centrally located 2-bedroom apartment in Yambol, Bulgaria. Ideal for short-term rentals. Book now!",
+    images: ["https://lindens.vercel.app/DSC_2415.JPG"], // Replace with a real image URL
+  },
 };
 
 export default function RootLayout({
