@@ -15,44 +15,41 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white shadow fixed w-full z-10">
+    <nav className="bg-black bg-opacity-70 shadow-lg fixed w-full z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo and Title */}
           <div className="flex items-center">
-            <img
-              src="/logo.webp" // Replace with the path to your logo
-              alt="Logo"
-              className="h-10 w-10 mr-3"
-            />
-            {/* Shortened Text for Mobile */}
-            <h1 className="block sm:hidden text-xl font-bold text-gray-600 whitespace-nowrap">
-              Downtown Apartment
-            </h1>
-            {/* Full Text for Larger Screens */}
-            <h1 className="hidden sm:block text-xl md:text-2xl font-bold text-gray-600 whitespace-nowrap">
-              Downtown Apartment By the Lindens
-            </h1>
+            <Link href="/" onClick={closeMenu} className="flex items-center space-x-2">
+              <img
+                src="/logo.webp" // Replace with the path to your logo
+                alt="Logo"
+                className="h-10 w-10 rounded-full border-2 border-white shadow"
+              />
+              <h1 className="text-xl md:text-2xl font-bold text-white whitespace-nowrap drop-shadow-lg">
+                Downtown Apartment
+              </h1>
+            </Link>
           </div>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden md:flex space-x-4">
-            <Link href="/" className="text-gray-700 hover:text-indigo-600">
+          <div className="hidden md:flex space-x-6">
+            <Link href="/" className="text-white hover:text-indigo-300 transition duration-300">
               Home
             </Link>
-            <Link href="#about" className="text-gray-700 hover:text-indigo-600">
+            <Link href="#about" className="text-white hover:text-indigo-300 transition duration-300">
               About
             </Link>
-            <Link href="#features" className="text-gray-700 hover:text-indigo-600">
+            <Link href="#features" className="text-white hover:text-indigo-300 transition duration-300">
               Features
             </Link>
-            <Link href="#gallery" className="text-gray-700 hover:text-indigo-600">
+            <Link href="#gallery" className="text-white hover:text-indigo-300 transition duration-300">
               Gallery
             </Link>
-            <Link href="#location" className="text-gray-700 hover:text-indigo-600">
+            <Link href="#location" className="text-white hover:text-indigo-300 transition duration-300">
               Location
             </Link>
-            <Link href="#contact" className="text-gray-700 hover:text-indigo-600">
+            <Link href="#contact" className="text-white hover:text-indigo-300 transition duration-300">
               Contact
             </Link>
           </div>
@@ -60,7 +57,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
             <button
-              className="text-gray-700 hover:text-indigo-600 focus:outline-none"
+              className="text-white hover:text-indigo-300 focus:outline-none"
               onClick={toggleMenu}
             >
               <svg
@@ -84,24 +81,48 @@ export default function Navbar() {
 
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
-        <div className="md:hidden">
-          <div className="px-4 pt-2 pb-4 space-y-1">
-            <Link href="/" className="block text-gray-700 hover:text-indigo-600" onClick={closeMenu}>
+        <div className="md:hidden bg-black bg-opacity-90 shadow-lg rounded-lg">
+          <div className="px-4 pt-2 pb-4 space-y-2">
+            <Link
+              href="/"
+              className="block text-white hover:bg-gray-700 hover:text-indigo-300 px-3 py-2 rounded-lg"
+              onClick={closeMenu}
+            >
               Home
             </Link>
-            <Link href="#about" className="block text-gray-700 hover:text-indigo-600" onClick={closeMenu}>
+            <Link
+              href="#about"
+              className="block text-white hover:bg-gray-700 hover:text-indigo-300 px-3 py-2 rounded-lg"
+              onClick={closeMenu}
+            >
               About
             </Link>
-            <Link href="#features" className="block text-gray-700 hover:text-indigo-600" onClick={closeMenu}>
+            <Link
+              href="#features"
+              className="block text-white hover:bg-gray-700 hover:text-indigo-300 px-3 py-2 rounded-lg"
+              onClick={closeMenu}
+            >
               Features
             </Link>
-            <Link href="#gallery" className="block text-gray-700 hover:text-indigo-600" onClick={closeMenu}>
+            <Link
+              href="#gallery"
+              className="block text-white hover:bg-gray-700 hover:text-indigo-300 px-3 py-2 rounded-lg"
+              onClick={closeMenu}
+            >
               Gallery
             </Link>
-            <Link href="#location" className="block text-gray-700 hover:text-indigo-600" onClick={closeMenu}>
+            <Link
+              href="#location"
+              className="block text-white hover:bg-gray-700 hover:text-indigo-300 px-3 py-2 rounded-lg"
+              onClick={closeMenu}
+            >
               Location
             </Link>
-            <Link href="#contact" className="block text-gray-700 hover:text-indigo-600" onClick={closeMenu}>
+            <Link
+              href="#contact"
+              className="block text-white hover:bg-gray-700 hover:text-indigo-300 px-3 py-2 rounded-lg"
+              onClick={closeMenu}
+            >
               Contact
             </Link>
           </div>

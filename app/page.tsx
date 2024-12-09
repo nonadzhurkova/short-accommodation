@@ -13,7 +13,8 @@ export default function Home() {
         <title>Your Apartment - Short-Term Accommodation</title>
         <meta name="description" content="Stay comfortably at our cozy apartment test." />
         <link rel="icon" href="/favicon.ico" />
-         
+
+          
       </Head>
       <main className="bg-gray-100 min-h-screen">
         {/* Hero Section */}
