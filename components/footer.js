@@ -6,7 +6,7 @@ export default function Footer() {
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Footer Content */}
                 <div className="flex flex-col md:flex-row justify-between items-center">
-                    {/* Left Section: Business Info */}
+                   
                     <div className="mb-6 md:mb-0 text-center md:text-left">
                         <h3 className="text-lg font-bold mb-2">Downtown Apartment By The Lindens</h3>
                         <p className="text-gray-600">Yambol, Bulgaria, Targovska street</p>
