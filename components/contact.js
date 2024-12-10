@@ -1,5 +1,8 @@
 import Link from "next/link";
 
+const phoneNumber = "359889721548"; // Add your phone number
+const whatsappLink = `https://wa.me/${phoneNumber}`;
+
 export default function Contact() {
   return (
       <section id="contact" className="py-16 px-6 bg-white">
@@ -37,6 +40,14 @@ export default function Contact() {
                       className="px-6 py-3 bg-blue-800 text-white font-bold rounded-lg shadow hover:bg-blue-900 transition"
                   >
                       Message on Facebook
+                  </Link>
+                  <Link
+                      href={whatsappLink} // Replace with your WhatsApp number, e.g., 1234567890
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-6 py-3 bg-green-500 text-white font-bold rounded-lg shadow hover:bg-green-600 transition"
+                  >
+                      Chat on WhatsApp
                   </Link>
               </div>
           </div>
