@@ -1,0 +1,30 @@
+# Allow all crawlers
+User-agent: *
+
+# Disallow indexing sensitive pages
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /private/
+
+# Allow the rest of the site
+Allow: /
+
+# Block specific files
+Disallow: /config/
+Disallow: /hidden/
+
+# Allow media assets
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Prevent phone numbers from being indexed
+Disallow: /contact/
+
+# Block all crawlers from accessing your staging environment (if applicable)
+User-agent: *
+Disallow: /staging/
+
+# Sitemap reference
+Sitemap: https://lindens.vercel.app/sitemap.xml
