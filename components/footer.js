@@ -6,41 +6,50 @@ export default function Footer() {
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Footer Content */}
                 <div className="flex flex-col md:flex-row justify-between items-center">
-                   
+                    
+                    {/* Left Section: Address and Email */}
                     <div className="mb-6 md:mb-0 text-center md:text-left">
                         <h3 className="text-lg font-bold mb-2">Downtown Apartment By The Lindens</h3>
                         <p className="text-gray-600">Yambol, Bulgaria, Targovska street</p>
-                       
+                        <p className="text-gray-600 mt-2">
+                            Email:{" "}
+                            <a
+                                href="mailto:bythelindens@gmail.com"
+                                className="text-indigo-600 hover:underline"
+                            >
+                                bythelindens@gmail.com
+                            </a>
+                        </p>
                     </div>
-                
+                    
                     {/* Center Section: Social and Booking Links */}
                     <div className="flex space-x-6 text-center">
                         <Link
-                            href="https://www.booking.com/hotel/bg/downtown-apartment-by-the-lindens.en-gb.html" // Replace with your Booking.com link
+                            href="https://www.booking.com/hotel/bg/downtown-apartment-by-the-lindens.en-gb.html"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hover:text-indigo-500 transition"
                         >
                             <img
-                                src="/1591871_booking_hotel_social_icon.png" // Replace with your Booking.com logo or icon
+                                src="/1591871_booking_hotel_social_icon.png"
                                 alt="Booking.com"
                                 className="h-8"
                             />
                         </Link>
                         <Link
-                            href="https://www.airbnb.com/h/yambolcentral" // Replace with your Airbnb link
+                            href="https://www.airbnb.com/h/yambolcentral"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hover:text-indigo-500 transition"
                         >
                             <img
-                                src="/11120556_fi_brands_airbnb_icon.png" // Replace with your Airbnb logo or icon
+                                src="/11120556_fi_brands_airbnb_icon.png"
                                 alt="Airbnb"
                                 className="h-8"
                             />
                         </Link>
                         <Link
-                            href="https://www.facebook.com/people/Downtown-Apartment-By-the-Lindens/61568878130922/" // Replace with your Facebook link
+                            href="https://www.facebook.com/people/Downtown-Apartment-By-the-Lindens/61568878130922/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hover:text-indigo-500 transition"
@@ -59,7 +68,7 @@ export default function Footer() {
                     {/* Right Section: Copyright */}
                     <div className="text-center md:text-right mt-6 md:mt-0">
                         <p className="text-gray-600">
-                            &copy; 2024 Downtown Apartment. All rights reserved. <br/>
+                            &copy; 2024 Downtown Apartment. All rights reserved. <br />
                             <Link href="/privacy-policy" className="underline hover:text-indigo-500">
                                 Privacy Policy
                             </Link>{" "}
