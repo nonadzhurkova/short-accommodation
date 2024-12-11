@@ -1,3 +1,5 @@
+"use client";
+
 export default function Hero({ title, subtitle, backgroundImage }) {
     return (
         <section

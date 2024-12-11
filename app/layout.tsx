@@ -21,12 +21,27 @@ export const metadata: Metadata = {
   description:
     "Stay at Downtown Apartment By the Lindens in Yambol, Bulgaria. A modern 2-bedroom apartment located in the city center. Perfect for short stays, families, and business travelers. Book now!",
   keywords: [
-    "Yambol short stay",
+    "Yambol monthly stay",
+    "Yambol short term rental",
     "Downtown Apartment Yambol",
-    "Linden apartments",
-    "City center accommodation",
-    "Short term rental Yambol",
-    "Yambol Bulgaria apartments",
+    "Yambol long term accommodation",
+    "City center apartment Yambol",
+    "Yambol Bulgaria monthly rental",
+    "Linden apartments Yambol",
+    "Short stay apartment Yambol",
+    "Extended stay Yambol Bulgaria",
+    "Yambol short stay accommodation",
+    "Central Yambol rental apartment",
+    "Fully equipped apartment Yambol",
+    "2 bedroom apartment Yambol",
+    "Yambol city center monthly stay",
+    "Yambol furnished apartment rental",
+    "Modern apartment Yambol Bulgaria",
+    "Affordable rental Yambol",
+    "Business accommodation Yambol",
+    "Vacation rental Yambol Bulgaria",
+    "Family-friendly apartment Yambol",
+    "Monthly apartment rental Yambol"
   ],
   openGraph: {
     title: "Downtown Apartment By the Lindens | Short Stay in Yambol, Bulgaria",
@@ -64,11 +79,11 @@ export default function RootLayout({
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KR8XWB26');`,
           }}
 
-            ></script>
+        ></script>
         {/* End Google Tag Manager */}
 
-         {/* Google Analytics */}
-         <script
+        {/* Google Analytics */}
+        <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-4ECW6RS4YG"
         ></script>

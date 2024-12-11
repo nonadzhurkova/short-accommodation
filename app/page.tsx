@@ -27,8 +27,8 @@ export default function Home() {
         {/* About Section */}
        <About />
        <Hero
-            title="Two bedroom apartment"
-            subtitle="With large double beds"
+            title="Comfortable Two-Bedroom Apartment"
+            subtitle="Relax in our spacious two-bedroom apartment, each featuring large and cozy double beds for a restful stay. Perfect for families, friends, or business travelers seeking comfort and convenience."
             backgroundImage="/DSC_2369.JPG"
         />
         <Contact />
@@ -36,8 +36,8 @@ export default function Home() {
        {/* Contact Section */}
 
        <Hero
-            title="Fully Equipped Kitchen"
-            subtitle=""
+            title="Monthly Stays Available"
+            subtitle="Enjoy the comfort of Downtown Apartment By The Lindens for 28+ nights at discounted rates. Ideal for extended vacations or work stays."
             backgroundImage="/DSC_2409.JPG"
         />
         
