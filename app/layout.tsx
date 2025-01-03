@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import CookieBanner from "../components/cookie";
+import { Analytics } from "@vercel/analytics/react"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -113,6 +114,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <CookieBanner />
+        <Analytics />
       </body>
     </html>
   );
