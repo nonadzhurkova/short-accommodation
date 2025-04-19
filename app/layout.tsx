@@ -19,6 +19,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Downtown Apartment By the Lindens | Short Stay in Yambol, Bulgaria",
+  
   description:
     "Stay at Downtown Apartment By the Lindens in Yambol, Bulgaria. A modern 2-bedroom apartment located in the city center. Perfect for short stays, families, and business travelers. Book now!",
   keywords: [
@@ -98,7 +99,8 @@ export default function RootLayout({
         ></script>
         {/* End Google Analytics */}
 
-        
+        <meta name="google-site-verification" content="myc07DZGy27xd7VSuCNEWEsIBMzDlP1XHGYDP_t82eY" />
+
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
