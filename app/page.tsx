@@ -5,7 +5,7 @@ import Features from "../components/features"
 import Contact from "../components/contact"
 import Gallery from "../components/gallery"
 import Location from "../components/location"
-
+import AvailabilityForm from "../components/availabilityForm"
 export default function Home() {
   return (
     <>
@@ -46,10 +46,7 @@ export default function Home() {
            <Contact />
        <Gallery />
         {/* Features Section */}
-        
-      
-
-     
+        <AvailabilityForm />
         <Contact />
       </main>
     </>

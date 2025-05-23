@@ -33,7 +33,7 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden md:flex space-x-6">
+          <div className="hidden md:flex items-center space-x-6">
             <Link href="/" className="text-white hover:text-indigo-300 transition duration-300">
               Home
             </Link>
@@ -52,10 +52,23 @@ export default function Navbar() {
             <Link href="#contact" className="text-white hover:text-indigo-300 transition duration-300">
               Contact
             </Link>
+            <Link 
+              href="#availability" 
+              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition duration-300 shadow-lg hover:shadow-xl font-medium"
+            >
+              Reserve Now
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex items-center space-x-4">
+            <Link 
+              href="#availability" 
+              className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded-md text-sm transition duration-300 shadow-lg hover:shadow-xl font-medium"
+              onClick={closeMenu}
+            >
+              Reserve
+            </Link>
             <button
               className="text-white hover:text-indigo-300 focus:outline-none"
               onClick={toggleMenu}
