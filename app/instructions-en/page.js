@@ -1,7 +1,12 @@
+'use client';
+
 import Head from 'next/head';
+import { useState } from 'react';
 import SimpleHeader from '../../components/simpleHeader';
 
 export default function InstructionsEn() {
+  const [showPassword, setShowPassword] = useState(false);
+
   return (
     <>
       <Head>
@@ -126,9 +131,60 @@ export default function InstructionsEn() {
                 </div>
               </div>
 
+              {/* WiFi and Amenities Section */}
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h3 className="text-xl font-semibold mb-3">5. WiFi and Amenities</h3>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-800 mb-2">WiFi Details</h4>
+                    <div className="bg-gray-100 p-4 rounded-md">
+                      <p className="text-gray-700 mb-2">
+                        <strong>Network name:</strong> YambolCentral
+                      </p>
+                      <div className="flex items-center space-x-2">
+                        <p className="text-gray-700">
+                          <strong>Password:</strong> 
+                          {showPassword ? '27179635' : '••••••••'}
+                        </p>
+                        <button
+                          onClick={() => setShowPassword(!showPassword)}
+                          className="text-blue-600 hover:text-blue-800 text-sm underline"
+                        >
+                          {showPassword ? 'Hide' : 'Show'}
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-800 mb-2">Television</h4>
+                    <p className="text-gray-700">
+                      <strong>Interactive TV:</strong> Select the DKTV application.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-800 mb-2">Coffee Machine</h4>
+                    <p className="text-gray-700 mb-4">
+                      Instructions for using the coffee machine:
+                    </p>
+                    <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                      <iframe
+                        className="absolute top-0 left-0 w-full h-full rounded-lg"
+                        src="https://www.youtube.com/embed/iAPHd8bvj1Q?si=5wHyE45jmsIB1Lo-"
+                        title="Coffee Machine Instructions"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               {/* Registration Section */}
               <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-xl font-semibold mb-3">5. Guest Registration</h3>
+                <h3 className="text-xl font-semibold mb-3">6. Guest Registration</h3>
                 <div className="space-y-3">
                   <p className="text-gray-700">
                     <strong>Mandatory registration:</strong> We are legally required to register all guests.
@@ -154,7 +210,7 @@ export default function InstructionsEn() {
 
               {/* Arrival Section */}
               <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-xl font-semibold mb-3">6. Arrival Time</h3>
+                <h3 className="text-xl font-semibold mb-3">7. Arrival Time</h3>
                 <p className="text-gray-700">
                   To ensure a smooth check-in, please notify us of your expected arrival time. 
                   This will help us organize your meeting at the apartment or provide you with self check-in instructions.
@@ -163,7 +219,7 @@ export default function InstructionsEn() {
 
               {/* Checkout Section */}
               <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-xl font-semibold mb-3">7. Check-out</h3>
+                <h3 className="text-xl font-semibold mb-3">8. Check-out</h3>
                 <div className="space-y-3">
                   <p className="text-gray-700">
                     <strong>Apartment check-out:</strong> By 11:00 AM, so we can prepare it for the next guests.
@@ -176,7 +232,7 @@ export default function InstructionsEn() {
 
               {/* Review Section */}
               <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-xl font-semibold mb-3">8. Leave a Review</h3>
+                <h3 className="text-xl font-semibold mb-3">9. Leave a Review</h3>
                 <p className="text-gray-700 mb-4">
                   We would be grateful if you could leave us a review on Google:
                 </p>

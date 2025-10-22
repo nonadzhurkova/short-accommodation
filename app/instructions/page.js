@@ -1,7 +1,12 @@
+'use client';
+
 import Head from 'next/head';
+import { useState } from 'react';
 import SimpleHeader from '../../components/simpleHeader';
 
 export default function Instructions() {
+  const [showPassword, setShowPassword] = useState(false);
+
   return (
     <>
       <Head>
@@ -126,9 +131,60 @@ export default function Instructions() {
                 </div>
               </div>
 
+              {/* WiFi and Amenities Section */}
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h3 className="text-xl font-semibold mb-3">5. WiFi и удобства</h3>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-800 mb-2">WiFi детайли</h4>
+                    <div className="bg-gray-100 p-4 rounded-md">
+                      <p className="text-gray-700 mb-2">
+                        <strong>Име на мрежата:</strong> YambolCentral
+                      </p>
+                      <div className="flex items-center space-x-2">
+                        <p className="text-gray-700">
+                          <strong>Парола:</strong> 
+                          {showPassword ? '27179635' : '••••••••'}
+                        </p>
+                        <button
+                          onClick={() => setShowPassword(!showPassword)}
+                          className="text-blue-600 hover:text-blue-800 text-sm underline"
+                        >
+                          {showPassword ? 'Скрий' : 'Покажи'}
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-800 mb-2">Телевизия</h4>
+                    <p className="text-gray-700">
+                      <strong>Интерактивна телевизия:</strong> Изберете приложението DKTV.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-800 mb-2">Кафемашина</h4>
+                    <p className="text-gray-700 mb-4">
+                      Инструкции за използване на кафемашината:
+                    </p>
+                    <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                      <iframe
+                        className="absolute top-0 left-0 w-full h-full rounded-lg"
+                        src="https://www.youtube.com/embed/iAPHd8bvj1Q?si=5wHyE45jmsIB1Lo-"
+                        title="Coffee Machine Instructions"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               {/* Registration Section */}
               <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-xl font-semibold mb-3">5. Регистрация на гости</h3>
+                <h3 className="text-xl font-semibold mb-3">6. Регистрация на гости</h3>
                 <div className="space-y-3">
                   <p className="text-gray-700">
                     <strong>Задължителна регистрация:</strong> Задължени сме по закон да регистрираме всички гости.
@@ -154,7 +210,7 @@ export default function Instructions() {
 
               {/* Arrival Section */}
               <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-xl font-semibold mb-3">6. Час на пристигане</h3>
+                <h3 className="text-xl font-semibold mb-3">7. Час на пристигане</h3>
                 <p className="text-gray-700">
                   За да осигурим безпроблемно настаняване, моля, уведомете ни за очаквания час на пристигане. 
                   Това ще ни помогне да организираме срещата Ви в апартамента или да Ви предоставим инструкции за самостоятелно настаняване.
@@ -163,7 +219,7 @@ export default function Instructions() {
 
               {/* Checkout Section */}
               <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-xl font-semibold mb-3">7. При напускане</h3>
+                <h3 className="text-xl font-semibold mb-3">8. При напускане</h3>
                 <div className="space-y-3">
                   <p className="text-gray-700">
                     <strong>Освобождаване на апартамента:</strong> До 11 часа, за да можем да го подготвим за следващите гости.
@@ -176,7 +232,7 @@ export default function Instructions() {
 
               {/* Review Section */}
               <div className="bg-white rounded-lg shadow-md p-6">
-                <h3 className="text-xl font-semibold mb-3">8. Оставете ревю</h3>
+                <h3 className="text-xl font-semibold mb-3">9. Оставете ревю</h3>
                 <p className="text-gray-700 mb-4">
                   Ще сме Ви благодарни да ни оставите ревю в Google:
                 </p>
